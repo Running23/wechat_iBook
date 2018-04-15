@@ -1,12 +1,32 @@
 {
-  "pages":[
+  "pages": [
+    "pages/book_lists/book_lists",
+    "pages/detail/detail",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/aboutme/aboutme"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffd777",
+    "navigationBarTitleText": "共益图书",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffd777",
+    "list": [
+      {
+        "pagePath": "pages/book_lists/book_lists",
+        "iconPath": "images/tabicon_index.jpg",
+        "selectedIconPath": "images/tabicon_index.jpg",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/aboutme/aboutme",
+        "iconPath": "images/tabicon_about.jpg",
+        "selectedIconPath": "images/tabicon_about.jpg",
+        "text": "关于"
+      }
+    ]
   }
 }
