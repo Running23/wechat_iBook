@@ -1,0 +1,22 @@
+<!--pages/book_lists/book_lists.wxml-->
+<view class='wrap'>
+  <!--列表模板begin -->
+  <template name='list'>
+  <navigator url="../../pages/detail/detail?id={{id}}" hover-class="navigator-hover">
+    <view class='imgs'>
+      <image class='' src='{{img}}'></image>
+    </view>
+    <view class='infos'>
+      <view class='title'>{{bookTitl}}</view>
+      <view class='date'>{{publicationDate}}</view>
+    </view>
+  </navigator>
+  </template>
+  <!--列表模板end  -->
+
+  <!--循环输出列表begin  -->
+  <view wx:for="{{booksList}}" wx:key="booksList"  wx:for-item="books" class="list">
+    <template is="list" data="{{...books}}" />
+  </view>
+  <!--循环输出列表end  -->
+</view>
